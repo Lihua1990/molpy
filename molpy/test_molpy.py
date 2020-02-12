@@ -18,4 +18,4 @@ def test_distance(point1, point2, bench):
 
 
 def test_distance_failure():
-    assert molpy.util.distance([0], [3]) !=5
+    assert molpy.util.distance([0], [3]) != 5

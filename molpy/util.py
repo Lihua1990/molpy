@@ -7,22 +7,17 @@ def distance(point1, point2):
     """
     Calculate distance between two points
 
-    Parameterss
-
+    Parameters
     ----------------------------------------
-
-    point1
-
-
-    ----------------------------------------
+    point1: array_like
+        The first point
+    point2: array_like
+        The second point
+        
     returns
     ----------
-
     float
-
-    
-    
-    
+        The distance between point1 and point2
     """
 
     point1 = np.asarray(point1)

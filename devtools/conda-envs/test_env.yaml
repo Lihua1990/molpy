@@ -3,6 +3,7 @@ channels:
 dependencies:
     # Base depends
   - python
+  - numpy
   - pip
 
     # Testing

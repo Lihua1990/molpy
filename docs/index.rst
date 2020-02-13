@@ -12,6 +12,7 @@ Welcome to molpy's documentation!
 
    getting_started
    api
+   anotherpage
 
 
 

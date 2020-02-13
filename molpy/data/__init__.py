@@ -1,1 +1,1 @@
-from .reader import look_and_say
+from .reader import look_and_say, get_molecule

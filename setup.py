@@ -30,6 +30,11 @@ setup(
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     license='MIT',
+    entry_points={
+        'console_scripts': [
+            "molpy=molpy.cli:main",
+        ],
+    },
 
     # Which Python importable modules should be included when your package is installed
     # Handled automatically by setuptools. Use 'exclude' to prevent some specific
@@ -46,7 +51,9 @@ setup(
 
     # Additional entries you may want simply uncomment the lines you want and fill in the data
     # url='http://www.my_package.com',  # Website
-    install_requires=['numpy >=1.14'],              # Required packages, pulls from pip if needed; do not use for Conda deployment
+    install_requires=[
+        'numpy >=1.14'
+    ],  # Required packages, pulls from pip if needed; do not use for Conda deployment
     # platforms=['Linux',
     #            'Mac OS-X',
     #            'Unix',
@@ -55,5 +62,4 @@ setup(
 
     # Manual control if final package is compressible or not, set False to prevent the .egg from being made
     # zip_safe=False,
-
 )

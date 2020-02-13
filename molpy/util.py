@@ -26,5 +26,17 @@ def distance(point1, point2):
 
 
 
+def read_xyz(filename):
 
-    
+    with open(filename, "r") as handle:
+        data = handle.readlines()
+
+    data = data[2:]
+    data = [x.split() for x in data]
+    symbols = [x[0] for x in data]
+
+    xyz = []
+    for line in data:
+        xyz.append([float(line[1]), float(line[2]), float(line[3])])
+
+    return {"symbols": np.array(symbols), "geometry": xyz} # return a dict
